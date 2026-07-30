@@ -1,19 +1,20 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
-weight : 1
+title : "Introduction"
+date : 2026-07-07 
+weight : 1 
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Tổng quan Workshop
+Workshop này cung cấp hướng dẫn từng bước để triển khai hệ thống EduShare lên môi trường AWS, áp dụng kiến trúc Cloud-Native và Serverless:
++ **"VPC"** thiết lập hạ tầng mạng cô lập, sử dụng các Subnet phân tầng (Public/Private) để tạo ranh giới bảo mật nghiêm ngặt.
++ **"ECS Fargate & ECR"** là nền tảng điện toán container serverless dùng để chạy Next.js Frontend và NestJS Backend, kết hợp cùng ECR để lưu trữ Docker image.
++ **"ALB"** phân phối lưu lượng truy cập bằng cơ chế Path-based Routing, cho phép cả Frontend và Backend chạy chung trên một bộ cân bằng tải duy nhất.
++ **"RDS PostgreSQL & ElastiCache Redis"** cung cấp dịch vụ cơ sở dữ liệu quan hệ và bộ nhớ đệm được quản lý hoàn toàn tự động bên trong mạng kín.
++ **"S3 & Secrets Manager"** xử lý việc lưu trữ an toàn các tệp tài liệu (thông qua Presigned URL) và quản lý tập trung các chuỗi bảo mật.
++ **"CloudFront, WAF & Route 53"** (Trên lý thuyết) tạo thành lớp bảo mật biên và CDN giúp phân phối nội dung toàn cầu, chống tấn công web và quản lý tên miền định tuyến.
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
-
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+*Lưu ý: Chúng ta sẽ không thực hành triển khai CloudFront, AWS WAF và Route 53 trong workshop này do tài khoản đang trong quá trình chờ AWS Support xác minh để có quyền tạo tài nguyên CloudFront.*
 
 ![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
