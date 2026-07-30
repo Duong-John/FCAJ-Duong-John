@@ -12,7 +12,7 @@ pre : " <b> 5.3.2 </b> "
 + Enter the Name tag as "edushare-igw".
 + Choose **Create internet gateway** to create the Internet Gateway.
 
-![Create IG](/images/5-Workshop/5.3-VPC-Subnet/Create-IG.png)
+![Create IG](/images/5-Workshop/5.3-VPC-Subnet/Create_IG.png)
 
 2. Return to the **Internet Gateways** section in the **VPC** Console, select **"edushare-igw"**, and click **Actions**.
 + Choose **Attach to VPC** and select the previously created VPC, **"edushare-vpc"**.

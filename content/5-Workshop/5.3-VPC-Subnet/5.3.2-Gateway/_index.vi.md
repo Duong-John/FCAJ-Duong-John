@@ -12,7 +12,7 @@ pre : " <b> 5.3.2 </b> "
 + Điền tên của Gateway là "edushare-igw"
 + Chọn **Create internet gateway** để tạo Internet Gateway
 
-![Create IG](/images/5-Workshop/5.3-VPC-Subnet/Create-IG.png)
+![Create IG](/images/5-Workshop/5.3-VPC-Subnet/Create_IG.png)
 
 2. Quay lại Console của **VPC** ở **Internet Gateway**, sau đó chọn **"edushare-igw"** và bấm **Action**
 + Chọn **Attach VPC** và chọn vào VPC đã tạo là **"edushare-vpc"**

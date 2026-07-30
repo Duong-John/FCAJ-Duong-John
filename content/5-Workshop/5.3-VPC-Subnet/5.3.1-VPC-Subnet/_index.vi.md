@@ -10,19 +10,19 @@ pre : " <b> 5.3.1 </b> "
 1. Mở [Amazon VPC console](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:)
 2. Trong thanh tìm kiếm, tìm **VPC**, chọn **VPC** và đi tới trang điều khiển VPC.
 
-![VPC](/images/5-Workshop/5.3-VPC-Subnet/Create-VPC.png)
+![VPC](/images/5-Workshop/5.3-VPC-Subnet/Create_VPC.png)
 
 3. Trong **VPC** Console chọn **Create VPC**:
 + Chọn VPC only
 + Đặt tên cho **VPC** là "edushare-vpc"
 + IPv4 CIDR block: Chọn Manual input và nhập `10.0.0.0/16` và click chọn **Create VPC**
 
-![VPC2](/images/5-Workshop/5.3-VPC-Subnet/Create-VPC-2.png)
+![VPC2](/images/5-Workshop/5.3-VPC-Subnet/Create_VPC_2.png)
 
 + Sau khi đã tạo **VPC**, chọn lại VPC **"edushare-vpc"** và chọn **Actions** để **Edit VPC**
 + Click vào ô tick **"DNS Setting"** để bật **"Enable DNS hostnames"** và **"Enable DNS resolution"** để RDS và ECR có thể phân giải tên miền nội bộ
 
-![VPCDNS](/images/5-Workshop/5.3-VPC-Subnet/Create-VPC-DNS.png)
+![VPCDNS](/images/5-Workshop/5.3-VPC-Subnet/Create_VPC_DNS.png)
 
 #### Tạo Subnet
 1. Quay lại trang điều khiển VPC, và ở cột bên trái, chọn **Subnets**
@@ -35,7 +35,7 @@ pre : " <b> 5.3.1 </b> "
 | `edushare-private-app-subnet` | Chọn AZ đầu tiên (`us-east-1a`) | `10.0.10.0/24` | Chứa ECS Fargate (NestJS) |
 | `edushare-private-db-subnet` | Chọn AZ đầu tiên (`us-east-1a`) | `10.0.20.0/24` | Chứa RDS PostgreSQL & Redis |
 
-![Subnet](/images/5-Workshop/5.3-VPC-Subnet/Create-Subnet.png)
+![Subnet](/images/5-Workshop/5.3-VPC-Subnet/Create_Subnet.png)
 
 2. Trong phần tạo Subnet ta tiến hành điền các thông tin:
 + Chọn **VPC** là **"edushare-vpc"**

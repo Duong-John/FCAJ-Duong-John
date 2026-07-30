@@ -14,19 +14,19 @@ Chúng ta sẽ tạo một Public Route Table cho Public Subnet để định ng
 + Đặt tên bảng Route Table là "edushare-public-rt"
 + Chọn **"Create"**
 
-![Create Route Table](/images/5-Workshop/5.3-VPC-Subnet/Create-RT.png)
+![Create Route Table](/images/5-Workshop/5.3-VPC-Subnet/Create_RT.png)
 
 2. Quay lại trang Console, chọn vào **"edushare-public-rt"** đã tạo, chọn Tab **Route** ở dưới cuối trang
 + Chọn **Edit Route** và chọn **Add Route**
 + Destination: `0.0.0.0/0`
 + Target chọn Internet Gateway trỏ vào **"edushare-igw"**
 
-![Config Route Table](/images/5-Workshop/5.3-VPC-Subnet/Config-RT.png)
+![Config Route Table](/images/5-Workshop/5.3-VPC-Subnet/Config_RT.png)
 
 3. Quay lại trang Console, chọn Tab **Subnet Associations** ở dưới cuối trang và chọn **Edit subnet associations**
 + Tick chọn Subnet Public tương ứng là **"edushare-public-subnet-a"**
 
-![Subnet Route Table](/images/5-Workshop/5.3-VPC-Subnet/Subnet-RT.png)
+![Subnet Route Table](/images/5-Workshop/5.3-VPC-Subnet/Subnet_RT.png)
 
 #### Tạo các Route Table khác tương tự
 Private App Route Table cho Fargate đi qua NAT Gateway 
