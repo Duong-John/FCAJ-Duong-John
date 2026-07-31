@@ -25,6 +25,5 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 | 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
 
 ### Needs Improvement
-* During one of my days at the office, I was slightly distracted and used my phone during working hours. This is a behavior that should not happen in a professional environment. I promise to correct this mistake and will not repeat it.
 * Improve my problem-solving mindset; I need to be more proactive in seeking answers not only from documentation but also from the mentors.
 * Learn to communicate better in daily interactions and work contexts, including handling situations effectively.
