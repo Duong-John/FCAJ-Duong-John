@@ -28,7 +28,7 @@ pre: " <b> 1.6. </b> "
 - Cấu hình **Application Load Balancer (ALB)**:
   - Listener port 80/443.
   - Target Group kết nối đến ECS Tasks.
-  - Health check path `/health`.
+  - Health check path `/api/v1/health` cho Backend và `/` cho Frontend.
 
 - Khởi tạo **RDS PostgreSQL (Single-AZ)** trong Private DB Subnet:
   - Chỉ cho phép kết nối từ ECS Security Group.

@@ -28,7 +28,7 @@ pre: " <b> 1.6. </b> "
 - Configured the **Application Load Balancer (ALB)**:
   - Listener on port 80/443.
   - Target Group connected to ECS Tasks.
-  - Health check path `/health`.
+  - Health check path `/api/v1/health` for Backend and `/` for Frontend.
 
 - Initialized **RDS PostgreSQL (Single-AZ)** in the Private DB Subnet:
   - Only allows connections from the ECS Security Group.
