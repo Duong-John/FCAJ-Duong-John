@@ -9,11 +9,11 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Le Gia Bao
+&emsp; **Full Name:** Nguyễn Ánh Dương
 
-&emsp; **Phone Number:** 0343922991 
+&emsp; **Phone Number:** 0393066365
 
-&emsp; **Email:** bao.le2005k23@hcmut.edu.vn
+&emsp; **Email:** duong.nguyen14112005@hcmut.edu.vn
 
 &emsp; **University:** Ho Chi Minh City University of Technology
 
@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 01/06/2026 to 15/08/2026
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](/images/avatar.jpg)
 
 ### Report Content
 
