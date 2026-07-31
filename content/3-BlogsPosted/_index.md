@@ -6,7 +6,10 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-This section will list and introduce the blogs I have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+This section will list and introduce the blogs our team have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
+
+You can visit 3 blogs from the Leader of our Team:
+[Lê Gia Bảo - Leader](https://www.facebook.com/groups/660548818043427/user/100025934673107)
 
 ###  [Blog 1 - Secure Multi-Tenant RAG with Amazon Bedrock and Verified Permissions](3.1-Blog1/)
 This blog introduces a multi-tenant document authorization solution for RAG architectures by combining Amazon Bedrock Knowledge Bases and Amazon Verified Permissions (Cedar policy language), optimizing infrastructure costs while delivering two-layer data security based on the Defense in Depth principle.
