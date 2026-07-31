@@ -1,28 +1,33 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-07-31
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# EduShare: Nền tảng Chia sẻ Tri thức và Thúc đẩy Cộng đồng Học thuật Tiên tiến
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+EduShare là một hệ thống trực tuyến hiện đại được thiết kế chuyên biệt cho việc lưu trữ, chia sẻ tài liệu và thảo luận học thuật. Không chỉ dừng lại ở một kho lưu trữ thông thường, EduShare kiến tạo một cộng đồng học tập sôi nổi thông qua việc tích hợp các tính năng tương tác thời gian thực (Hỏi đáp/Bình luận) và hệ thống Gamification (tích lũy điểm thưởng, thăng cấp, bảng xếp hạng) nhằm khơi dậy động lực đóng góp từ người dùng.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+1. Điểm nhấn Kỹ thuật: Đề cao hiệu năng và khả năng mở rộng, EduShare được xây dựng dựa trên nền tảng Clean Architecture (NestJS) cho Backend và Feature-based Modular (Next.js) cho Frontend. Hệ thống vận hành toàn diện trên Hạ tầng điện toán đám mây AWS (AWS Cloud) với các đột phá:
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+2. Truyền tải dữ liệu siêu tốc: Cơ chế tải file trực tiếp lên Amazon S3 qua Presigned URL và phân phối nội dung toàn cầu thông qua mạng lưới Amazon CloudFront.
+
+3. Hiệu năng & Mở rộng linh hoạt: Sử dụng Amazon ElastiCache (Redis) cho Bảng xếp hạng tức thời (Real-time Leaderboard) và triển khai Backend dưới dạng Serverless Container trên Amazon ECS (Fargate) giúp hệ thống tự động co giãn theo lưu lượng truy cập.
+
+4. Bảo mật cấp độ Doanh nghiệp: Quản lý tập trung các thông tin nhạy cảm qua AWS Secrets Manager và tuân thủ nguyên tắc phân quyền tối thiểu (Least Privilege) của IAM.
+
+EduShare không chỉ là một giải pháp giáo dục, mà còn là một minh chứng xuất sắc cho việc ứng dụng kiến trúc phần mềm hiện đại và hạ tầng Cloud để giải quyết các bài toán hệ thống quy mô lớn.
+
 
 #### Nội dung
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
 2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
+3. [Hạ tầng mạng](5.3-VPC-Subnet/)
+4. [Các dịch vụ](5.4-Service/)
 5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
 6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
