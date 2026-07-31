@@ -11,7 +11,7 @@ pre : " <b> 5.7. </b> "
 2. Select the cluster **`edushare-cluster`**.
 3. In the **Services** tab, select the services and click **Delete**.
 
-![Cluster Clean up](/images/5-Workshop/5.7-Cleanup/CleanUp_Cluster.png)
+![Cluster Clean up](/images/5-Workshop/5.7-Cleanup/Cleanup_Cluster.png)
 
 #### Clean up Load Balancers and Target Groups
 1. From the left navigation pane, go to **Load Balancers**, select **`edushare-alb`**, click **Actions**, and select **Delete load balancer**.
