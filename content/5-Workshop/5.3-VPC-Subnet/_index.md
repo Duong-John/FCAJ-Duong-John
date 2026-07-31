@@ -14,8 +14,8 @@ In this section, you will build the core network foundation for the EduShare sys
 
 #### Content
 
-- [1. Create VPC and Subnetting](5.3.1-create-vpc/)
-- [2. Create Gateways](5.3.2-create-gateways/)
-- [3. Configure Route Tables](5.3.3-configure-route-tables/)
-- [4. Set up Security Groups (Zero-Trust)](5.3.4-setup-security-groups/)
-- [5. Create IAM Roles for ECS Fargate](5.3.5-create-iam-roles/)
+- [1. Create VPC and Subnetting](5.3.1-vpc-subnet/)
+- [2. Create Gateways](5.3.2-gateways/)
+- [3. Configure Route Tables](5.3.3-route-tables/)
+- [4. Set up Security Groups (Zero-Trust)](5.3.4-security-group/)
+- [5. Create IAM Roles for ECS Fargate](5.3.5-iam-roles-cloudwatch/)

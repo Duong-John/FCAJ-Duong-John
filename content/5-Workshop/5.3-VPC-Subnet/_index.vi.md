@@ -14,8 +14,8 @@ Trong phần này, bạn sẽ xây dựng nền tảng mạng cốt lõi cho h�
 
 #### Nội dung
 
-- [1. Tạo VPC và Phân chia Subnet](3.1-create-vpc/)
-- [2. Tạo Gateways (Cổng giao tiếp)](3.2-create-gateways/)
-- [3. Cấu hình Route Tables (Bảng định tuyến traffic)](3.3-configure-route-tables/)
-- [4. Thiết lập Security Groups (Hàng rào lửa Zero-Trust)](3.4-setup-security-groups/)
-- [5. Tạo IAM Roles cho ECS Fargate](3.5-create-iam-roles/)
+- [1. Tạo VPC và Subnet](5.3.1-vpc-subnet/)
+- [2. Tạp Gateways](5.3.2-gateways/)
+- [3. Chỉnh sửa Route Tables](5.3.3-route-tables/)
+- [4. Tạo Security Groups (Zero-Trust)](5.3.4-security-group/)
+- [5. Tạo IAM Roles cho ECS Fargate](5.3.5-iam-roles-cloudwatch/)

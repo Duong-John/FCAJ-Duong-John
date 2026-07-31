@@ -16,5 +16,10 @@ Trong phần này, chúng ta sẽ khởi tạo các dịch vụ lưu trữ dữ 
 
 ![overview](/images/5-Workshop/5.4-Data-Edge/diagram.png)
 
-
+#### Nội dung
+- [1. Create S3](5.4.1-s3_cors/)
+- [2. Tạo Database](5.4.2-rds/)
+- [3. Tạo Elastic Cache](5.4.3-cache/)
+- [4. Lưu thông tin vào Secret Manager](5.4.4-secret-manager/)
+- [5. Tạo Target Group và Load Balancer](5.4.5-target-group-alb/)
 
